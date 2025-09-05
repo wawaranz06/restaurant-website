@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CSS & JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- PAGE ONE: HOME -->
+<div data-role="page" id="pageone">
+
+  <div data-role="header" data-theme="b">
+    <center><img src="restaurant_logo.jpg" style="height:100px;width:130px"></center>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home" class="ui-btn-active">HOME</a></li>
+        <li><a href="#pagetwo" data-icon="star">Menu</a></li>
+        <li><a href="#pagethree" data-icon="shop">Reservation</a></li>
+      </ul>
+    </div>
+    <h1>Welcome to Our Restaurant</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Experience fine dining with a variety of cuisines and a cosy atmosphere.</p>
+    <p>Click <b>Menu</b> to explore dishes or <b>Reservation</b> to book a table.</p>
+  </div>
+
+  <div data-role="footer" data-theme="b">
+    <p>© 2025 Our Restaurant</p>
+  </div>
+</div>
+
+<!-- PAGE TWO: MENU -->
+<div data-role="page" id="pagetwo">
+
+  <div data-role="header" data-theme="b">
+    <center><img src="restaurant_logo.jpg" style="height:100px;width:130px"></center>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home">HOME</a></li>
+        <li><a href="#pagetwo" data-icon="star" class="ui-btn-active">Menu</a></li>
+        <li><a href="#pagethree" data-icon="shop">Reservation</a></li>
+      </ul>
+    </div>
+    <h1>Our Menu</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><h2>Grilled Salmon</h2><p>Served with lemon butter sauce</p></li>
+      <li><h2>Chicken Alfredo Pasta</h2><p>Creamy sauce with parmesan</p></li>
+      <li><h2>Garden Salad</h2><p>Fresh vegetables with house dressing</p></li>
+      <li><h2>Margherita Pizza</h2><p>Classic Italian pizza with fresh basil</p></li>
+      <li><h2>Chocolate Lava Cake</h2><p>Warm cake with molten centre</p></li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-theme="b">
+    <p>Enjoy your meal with us!</p>
+  </div>
+</div>
+
+<!-- PAGE THREE: RESERVATION -->
+<div data-role="page" id="pagethree">
+
+  <div data-role="header" data-theme="b">
+    <center><img src="restaurant_logo.jpg" style="height:100px;width:130px"></center>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home">HOME</a></li>
+        <li><a href="#pagetwo" data-icon="star">Menu</a></li>
+        <li><a href="#pagethree" data-icon="shop" class="ui-btn-active">Reservation</a></li>
+      </ul>
+    </div>
+    <h1>Restaurant Reservation</h1>
+  </div>
+
+  <div data-role="content">
+    <form action="#" method="post">
+      <h3>Book a Table</h3>
+
+      <label for="custname">Name:</label>
+      <input type="text" id="custname" name="name"><br>
+
+      <label for="custphone">Phone Number:</label>
+      <input type="text" id="custphone" name="phone"><br>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="20"><br>
+
+      <label for="table">Table Type:</label>
+      <select id="table" name="table">
+        <option>Indoor</option>
+        <option>Outdoor</option>
+        <option>VIP Room</option>
+        <option>Family Section</option>
+      </select><br>
+
+      <label for="date">Reservation Date:</label>
+      <input type="date" id="date" name="date"><br>
+
+      <label for="time">Reservation Time:</label>
+      <input type="time" id="time" name="time"><br><br>
+
+      <input type="submit" value="Book Now">
+    </form>
+  </div>
+
+  <div data-role="footer" data-theme="b">
+    <p>THANK YOU FOR DINING WITH US.</p>
+  </div>
+</div>
+
+</body>
+</html>
